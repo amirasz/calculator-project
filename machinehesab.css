@@ -1,0 +1,118 @@
+body {
+	margin:0;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:100vh;
+	background:#191811;
+	background:gray;
+}
+
+.form {
+	width:264px;
+	height:384px;
+	background:#191811;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	padding:6px 0;
+	border-radius:20px;
+	box-shadow:-10px 10px 20px rgba(10, 10, 7, 0.2), 10px -10px 20px rgba(10, 10, 7, 0.2), -10px -10px 20px(40, 38, 27, 0.9), 10px 10px 25px rgba(10, 10, 7, 0.9), inset 1px 1px 2px rgba(40, 38, 27, 0.3), inset -1px -1px 2px rgba(10, 10, 7, 0.5);
+}
+
+.grid-container {
+	width:100%;
+	height:100%;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-template-rows:1fr 1fr 1fr 1fr1fr 1fr 1fr;
+	margin:6px;
+	gap:6px 6px;
+	grid-template-areas:
+	"display display display display"
+	"display display display display"
+	". . . ."
+	". . . ."
+	". . . ."
+	". . . equate"
+	". . . equate"
+}
+
+.display {grid-area:display;}
+
+.equate {grid-area:equate;}
+
+.display, .btn, .equate {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.inner-display {
+	width:236px;
+	height:60px;
+	background:#191811;
+	box-shadow:1px 1px 2px rgba(40, 38, 27, 0.3), -1px -1px 2px rgba(10, 10, 7, 0.2), inset -5px 5px 10px rgba(10, 10, 7, 0.2), inset 5px -5px 10px rgba(10, 10, 7, 0.2), inset -5px -5px 10px rgba(40, 38, 27, 0.9), inset 5px 5px 13px rgba(10, 10, 7, 0.9);
+	border-radius:20px;
+	text-align:right;
+	display:flex;
+	flex-direction:column-reverse;
+}
+
+.inner-text {
+	text-align:right;
+	background:#191811;
+	height:120px;
+	font-family:Rubik;
+	font-size:24px;
+	margin:10px 10px 10px 10px;
+	font-style:normal;
+	font-weight:500;
+	color:#f8f8f8;
+	border-width:0px;
+	border:none;
+}
+
+.inner-text:focus {
+	border-width:0px;
+	border:none;
+	outline:none;
+}
+
+.inner-btn {
+	cursor:pointer;
+	width:40px;
+	height:40px;
+	border-radius:40px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	background:#191811;
+	box-shadow:-5px 5px 10px rgba(10, 10, 7, 0.2), 5px -5px 10px rgba(10, 10, 7, 0.2), -5px -5px 10px rgba(40, 38, 27, 0.9), 5px 5px 13px rgba(10, 10, 7, 0.9), inset 1px 1px 2px rgba(40, 38, 27, 0.3), inset -1px -1px 2px rgba(10, 10, 7, 0.5);
+	font-family:Rubik;
+	font-size:16px;
+	font-style:normal;
+	font-weight:500;
+	color:#f8f8f8;
+	transition:box-shadow 0.3s ease-in-out;
+}
+
+.inner-btn:active {
+	box-shadow:1px 1px 2px rgba(40, 38, 27, 0.3), -1px -1px 2px rgba(10, 10, 7, 0.5), inset -5px 5px 10px rgba(10, 10, 7, 0.2), inset 5px -5px 10px rgba(10, 10, 7, 0.2), inset -5px -5px 10px rgba(40, 38, 27, 0.9), inset 5px 5px 13px rgba(10, 10, 7, 0.9);
+	transition:box-shadow 0.3s ease-in-out;
+	font-size:14px;
+}
+
+.equate, inner-btn {
+	height:100px;
+	background:#f94e00;
+	color:#191811;
+}
+
+.equate, .inner-btn:active {
+	box-shadow:1px 1px 2px rgba(255, 255, 13, 0.3), -1px -1px 2px rgba(98, 68, 3, 0.5), inset -5px 5px 10px rgba(98, 68, 3, 0.2), inset 5px -5px 10px rgba(98, 68, 3, 0.2), inset -5px -5px 10px rgba(255, 255, 13, 0.9), inset 5px 5px 13px rgba(98, 68, 3, 0.9);
+	transition:box-shadow 0.3s ease-in-out;
+}
+
+.yellow {color:#f94e00}
